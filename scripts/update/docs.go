@@ -1,8 +1,3 @@
-// Unless explicitly stated otherwise all files in this repository are licensed
-// under the Apache License Version 2.0.
-// This product includes software developed at Datadog (https://www.datadoghq.com/).
-// Copyright 2018 Datadog, Inc.
-
 package main
 
 import (
@@ -17,7 +12,7 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/cobra/doc"
 
-	"github.com/JulienBalestra/go-boilerplate/cmd/cli"
+	"github.com/JulienBalestra/go-boilerplate/cmd"
 )
 
 func init() {
@@ -36,7 +31,7 @@ func main() {
 	if err != nil {
 		glog.Exitf("Cannot create markdown in %s", docDir)
 	}
-	command, _ := cli.NewCommand()
+	command, _ := cmd.NewCommand()
 	err = doc.GenMarkdownTree(command, docDir)
 	if err != nil {
 		glog.Exitln(err)

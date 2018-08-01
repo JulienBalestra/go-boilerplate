@@ -14,7 +14,7 @@ go-boilerplate command line [flags]
 
 ```
 
-# generate the private key and the csr
+# help
 go-boilerplate my-argument --super-flag my-flag 
 
 ```

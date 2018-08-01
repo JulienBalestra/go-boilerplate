@@ -27,10 +27,6 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/JulienBalestra/kube-csr"
-
-[[constraint]]
-  branch = "master"
   name = "github.com/golang/glog"
 
 [[constraint]]
@@ -43,7 +39,7 @@
 
 [[constraint]]
   name = "github.com/stretchr/testify"
-  version = "1.2.1"
+  version = "1.2.2"
 
 [prune]
   go-tests = true

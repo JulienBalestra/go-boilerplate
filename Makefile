@@ -6,7 +6,7 @@ CGO_ENABLED?=0
 NAME=go-boilerplate
 
 $(NAME):
-	CGO_ENABLED=$(CGO_ENABLED) GOOS=$(GOOS) $(CC) build $(CFLAGS) -o $@ cmd/main.go
+	CGO_ENABLED=$(CGO_ENABLED) GOOS=$(GOOS) $(CC) build $(CFLAGS) -o $@
 
 clean:
 	$(RM) $(NAME)
